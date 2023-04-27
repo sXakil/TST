@@ -1,22 +1,9 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
-    <link rel="stylesheet" href="semantic/semantic.min.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <jsp:include page="/header.jsp">
+    <jsp:param name="title" value="Sign Up" />
+  </jsp:include>
   <body>
-    <div class="ui menu">
-      <div class="header item">Course Managements</div>
-      <div class="right menu">
-        <a class="item active"> <i class="user icon"></i> Log In </a>
-        <a class="item" href="signup.jsp">
-          <i class="user plus icon"></i> Sign Up
-        </a>
-      </div>
-    </div>
+    <%@include file="/navbar.jsp" %>
     <div class="ui text container">
       <div class="ui two column centered grid">
         <div class="column">
@@ -34,12 +21,12 @@
                   <i class="key icon"></i>
                 </div>
               </div>
-              <button class="ui button primary" type="submit">Log in</button>
+              <button class="ui button primary" type="submit">Log In</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <script src="semantic/semantic.min.js"></script>
+    <%@ include file="/footer.jsp" %>
   </body>
 </html>

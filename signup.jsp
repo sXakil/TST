@@ -1,15 +1,9 @@
 <html lang="en">
-  <%@ include file="/header.jsp" %>
+  <jsp:include page="/header.jsp">
+    <jsp:param name="title" value="Sign Up" />
+  </jsp:include>
   <body>
-    <div class="ui menu">
-      <div class="header item">Course Managements</div>
-      <div class="right menu">
-        <a class="item active"> <i class="user icon"></i> Log In </a>
-        <a class="item" href="signup.html">
-          <i class="user plus icon"></i> Sign Up
-        </a>
-      </div>
-    </div>
+    <%@include file="/navbar.jsp" %>
     <div class="ui text container">
       <div class="ui two column centered grid">
         <div class="column">
@@ -27,7 +21,7 @@
                   <i class="key icon"></i>
                 </div>
               </div>
-              <button class="ui button primary" type="submit">Log in</button>
+              <button class="ui button primary" type="submit">Sign Up</button>
             </form>
           </div>
         </div>
