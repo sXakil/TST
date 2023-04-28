@@ -3,7 +3,17 @@
     <jsp:param name="title" value="Sign Up" />
   </jsp:include>
   <body>
-    <%@include file="/navbar.jsp" %>
+    <div class="ui menu">
+      <div class="header item">Course Managements</div>
+      <div class="right menu">
+        <a class="item active" href="login.jsp">
+          <i class="sign-in icon"></i> Log In
+        </a>
+        <a class="item" href="signup.jsp">
+          <i class="user plus icon"></i> Sign Up
+        </a>
+      </div>
+    </div>
     <div class="ui text container">
       <div class="ui two column centered grid">
         <div class="column">
@@ -11,8 +21,8 @@
             <form class="ui form">
               <div class="field">
                 <div class="ui left icon input">
-                  <input type="text" placeholder="E-mail" />
-                  <i class="mail icon"></i>
+                  <input type="text" placeholder="Username" />
+                  <i class="user icon"></i>
                 </div>
               </div>
               <div class="field">
